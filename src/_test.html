@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class=" qzptwz idc0_336">
+
+<head>
+  <title>Test</title>
+
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .block {
+      width: 100%;
+      height: 200px;
+      font-size: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+  </style>
+
+  <script type="text/javascript">
+    window.addEventListener('load', () => {
+
+      const vid = document.querySelector('video')
+      const main = document.querySelector('main')
+      const block = document.createElement('div')
+      block.classList.add('block')
+
+      for (let i = 1; i <= 20; i++) {
+        let tmp = block.cloneNode(true);
+        tmp.textContent = i
+        tmp.style.background = '#' + Math.floor(Math.random() * 16777215).toString(16)
+        if (i <= 10) main.insertBefore(tmp, vid)
+        else main.appendChild(tmp)
+      }
+
+      /* 
+      const mute = ['onpointer', 'onmouse', 'ontimeupdate']
+      for (let key in vid)
+        if (key.search('on') === 0 && !(mute.some(prop => key.startsWith(prop))))
+        vid.addEventListener(key.slice(2), (e) => console.log(key, e.type, e))
+      */
+
+    })
+  </script>
+
+  <script type="text/javascript" src="./at60.js"></script>
+
+</head>
+
+<body>
+  <main role="main">
+
+    <video width="100%" height="600px" controls autoplay muted src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4">
+    </video>
+
+  </main>
+</body>
+
+</html>

@@ -1,30 +1,30 @@
 # iframe-auto-control
 
+Starts or pauses a video automatically depending on the visibility.
+*(Use the `autoplay` property on the video to start automatically)*
+
 ---
 
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/1.js
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/1.min.js
+### 50% in/out of view
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control/src/at50.min.js"></script>
 ```
 
 ---
 
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/10.js
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/10.min.js
+### 60% in/out of view
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/10.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control/src/at60.min.js"></script>
 ```
 
 ---
 
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/100.js
-https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/100.min.js
+### 90% in/out of view
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control@main/src/100.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/erleiuat/iframe-auto-control/src/at90.min.js"></script>
 ```
 
 ---
