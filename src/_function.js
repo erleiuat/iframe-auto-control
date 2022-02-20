@@ -1,4 +1,5 @@
 function main(ratio, threshold, target) {
+  if (!target) return null
   let delay = null
 
   const observer = new IntersectionObserver((elements) => {
