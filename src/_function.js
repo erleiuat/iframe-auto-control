@@ -1,12 +1,11 @@
-function main(ratio, threshold, target) {
-  if (!target) return null
+function main(ratio, threshold, target, autoplay) {
   let delay = null
 
   const observer = new IntersectionObserver((elements) => {
     clearTimeout(delay)
     delay = setTimeout(() => {
       elements.forEach(element => {
-        if (target.paused && target.autoplay && element.intersectionRatio > ratio)
+        if (target.paused && autoplay && element.intersectionRatio > ratio)
           target.play()
         else if (!target.paused && element.intersectionRatio < ratio)
           target.pause()
