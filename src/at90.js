@@ -6,7 +6,7 @@ function main(ratio, threshold, target, autoplay) {
     delay = setTimeout(() => {
       elements.forEach(element => {
         if (target.paused && autoplay && element.intersectionRatio > ratio)
-          target.play()
+          target.play().catch(error => {})
         else if (!target.paused && element.intersectionRatio < ratio)
           target.pause()
       })
